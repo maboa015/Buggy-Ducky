@@ -1,0 +1,64 @@
+/* farger */
+:root{ /* alle fargene er disse tre variablene sånn at jeg kan justere på fargene lett*/
+    --purple: #2e0994;
+    --pink: #ff2079;
+    --white: rgb(230, 230, 230);
+}
+/* elementer */
+*{ /* default har margin og padding på 10px og det vil jeg ikke ha så jeg setter det til 0*/
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("media/bg.svg");
+    background-size: cover;
+    font-family: 'Press Start 2P';
+}
+form{ /* hele form boksen */
+    background-color: var(--purple);
+    width: 50%;
+    min-width: 350px;
+    max-width: 700px;
+    text-align: center;
+    margin-left: 50%; /* margin left og transform sentrerer elementet */
+    transform: translate(-50%);
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0px 2em 0px var(--pink) ; /* glow effekten rundt */
+}
+label{ /* navnene ovenfor skrivefeltene */
+    color: var(--white);
+}
+input{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    background-color: var(--white);
+    height: 30px;
+    font-size: 20px;
+    font-family: 'Press Start 2P';
+    width: 80%;
+    border: none;
+}
+textarea{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    background-color: var(--white);
+    font-size: 20px;
+    font-family: 'Press Start 2P';
+    width: 80%;
+    max-height: 500px;
+    resize: vertical;
+    border: none;
+}
+input.form_btn{ /* submit knappen */
+    padding: 10px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--pink) ;
+    color: var(--white) ;
+    border: none;
+}
+input.form_btn:hover{
+    cursor: pointer;
+}

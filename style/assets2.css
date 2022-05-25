@@ -1,0 +1,30 @@
+/* enda en asset fil siden den forrige slutta å update :/ */
+:root{ /* farger */
+    --purple: #2e0994;
+    --pink: #ff2079;
+    --white: rgb(230, 230, 230);
+}
+/* knapper */
+a.btn{
+    border: solid 2px var(--pink);
+    border-top: solid 10px;
+    border-bottom: solid 10px;
+    font-size: 36px;
+    padding: 20px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+/* bilder */
+img{ /* default */
+    border-top: solid 2px var(--pink);
+    border-bottom: solid 20px var(--pink);
+    box-shadow: 0 0 1em 0 var(--pink);
+}
+img.big{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+}
+.page1{
+    height: 40vh;
+}

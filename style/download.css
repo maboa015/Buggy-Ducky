@@ -1,0 +1,72 @@
+body{ /*bakgrunn*/
+    background-image: url("../media/waves.svg");/* liggende bakgrunn (16:9 resolution) */
+    background-size: cover;
+    overflow: hidden;
+}
+@media (max-width: 800px){ /* mobil */
+    body{
+        background-image: url(../media/wavesmobile.svg); /*stående bakgrunn (1:2 resolution) */
+    }
+}
+.glowbtn{ /* download knapp */
+    background-color: rgba(255, 31, 136, 0);
+    color: rgb(255, 31, 136);
+    border: solid 5px rgb(255, 31, 136);
+    width: 500px;
+    margin: 100px 50% 500px 50% ;
+    margin-left: 50%; /* sentrerer knappen */
+    transform: translate(-50%);
+    border-radius: 50px; /* runder av borderen */
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 0 0 0.5em rgb(255, 31, 136) ; /* gir teksten litt glow effekt*/
+    padding: 30px;
+    box-shadow: inset 0 0 1em 0 rgb(255, 31, 136), 0 0 1em 0 rgb(255, 31, 136); /* glow effekten på border til knappen */
+    position: relative;
+}
+.glowbtn::before{ /* knapp sin shadow under */
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: rgb(255, 31, 136);
+    top: 150%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: perspective(10em) rotateX(40deg) scale(1, 0.7); /* lager 3D effekt */
+    filter: blur(1em);
+    opacity: 0.7; /* opacity på 0.7 men på hover 1 for å gi det en glowup på hover */
+    transition: 0.5s;
+}
+.glowbtn::after{ /* glowup bak knappen på hover */
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50px;
+    box-shadow: 0 0 2em 0.5em rgb(255, 31, 136);
+    opacity: 0;
+    transition: 0.5s;
+}
+.glowbtn:hover{
+    background-color: rgb(255, 31, 136) ; /* nye farger på hover */
+    color: white;
+    text-shadow: none;
+}
+.glowbtn:hover::after{
+    opacity: 1; /*glowup*/
+}
+.glowbtn:hover::before{
+    opacity: 1; /*glowup*/
+    transition: 0.5s;
+}
+@media (max-width: 800px){ /* mobil */
+    .glowbtn{
+        width: 350px;
+        font-size: 30px;
+    }
+}

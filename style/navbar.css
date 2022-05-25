@@ -1,0 +1,104 @@
+*{ /* endrer på defaults til css feks margin er default 10px og det vil jeg ikke ha */
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{ /* bakgrunn */
+    font-family: 'Press Start 2P';
+    background-color: #0f0341;
+}
+::-webkit-scrollbar { /* fjerner den stygge gråe scrollen som ikke passer til siden i det hele tatt */
+    width: 0;
+}
+nav{ /* navbar container */
+    background-color: #230570;
+    height: 60px;
+    box-shadow: 0 0px 2em 0px #ff2079;
+}
+label.logo{ /* logo */
+    color: #ff2079;
+    font-size: 28px;
+    line-height: 60px; /* sentrerer teksten vertikalt */
+    padding: 0 50px;
+    font-weight: bold;
+}
+nav ul{ /* linkene sine container */
+    float: right; /* får dem til å gå så langt mot høyre som de kan */
+    margin-right: 20px;
+}
+nav ul li{ /* linkene */
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #ff2079;
+    font-size: 17px;
+    text-transform: uppercase;
+}/* aktive nettsiden og den som blir hovera har underline */
+a.active, nav ul li a:hover{
+    text-decoration: underline;
+}
+i.material-icons{ /* profil ikon */
+    transform: scale(1.5);
+}
+.checkbtn{ /* tre streker for å åpne menuen */
+    font-size: 30px;
+    color: #ff2079 ;
+    line-height: 70px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none; /* no display sånn at den ikke vises */
+}
+#check{
+    display: none; /* no display sånn at den ikke vises */
+}
+/* når skjermen er mindre enn 952px så skjer disse tingene */
+
+@media (max-width: 952px){
+label.logo{
+    font-size: 20px;
+    padding-left: 30px;
+}
+nav ul li a{
+    font-size: 15px;
+}
+}
+
+/*mobil size*/
+@media (max-width:1000px){
+nav{
+    position: fixed;
+    margin-top: 0px;
+}
+.checkbtn{ /* tre streker for å åpne menuen*/
+    display: block;
+    line-height: 50px;
+}
+ul{ /* link containeren */
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #2e0792;
+    top: -120%; /* gjemmer den utenfor screen */
+    left: 0;
+    text-align: center;
+    transition: all 1s; /* hvor lang tid det tar for at den går fra gammel til ny css */
+    box-shadow: 0 10px 10px #2e0792; 
+}
+nav ul li{ /* linkene */
+    display: block;
+}
+nav ul li a{
+    font-size: 20px;
+}
+a:hover, a.active{
+    text-decoration: underline;
+}
+#check:checked ~ ul{
+    top: 60px; /*når check er checked så kommer link containeren tilbake i skjermen sin visibility*/
+}
+}

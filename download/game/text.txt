@@ -1,4 +1,0 @@
-Buggy Ducky zip filen skal hit og hete "Buggy Ducky.zip"
-Spillet er for stort for github så zip filen til spillet skal hit 
-zippen av spillet ligger på google drive fordi man kan laste opp max 25MB i github
-spillet zip filen er ca 35MB

@@ -6,7 +6,7 @@ Spillet er for stort for Github.
 zippen av spillet ligger på Google Drive fordi man kan laste opp max 25MB på Github
 mens på Google Drive er det opp til 15 GB gratis med google konto.
 
-PS. Buggy Ducky zip filen er litt under 35MB
+PS. Buggy Ducky zip filen er 36 MB
 
 Linken til Buggy Ducky zip filen:
 https://drive.google.com/file/d/1aZqXz57fXFGeqoGekEM2IJ_kLisGh-9H/view?usp=sharing

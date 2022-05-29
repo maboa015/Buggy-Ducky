@@ -1,0 +1,11 @@
+Årsoppgave dokumentasjon
+
+setup:
+https://udeoslokommuneno-my.sharepoint.com/:u:/g/personal/maboa015_osloskolen_no/EfbHBuI01AhPmNRRN0C_tG4BLdagZQBTQCg1Th5zmC-TvQ?e=gK7Ymi
+
+PHP og SQL dokumentasjon:
+https://udeoslokommuneno-my.sharepoint.com/:u:/g/personal/maboa015_osloskolen_no/EQPcrpAn04hOtg5TtaNebksBLth_K1hHK6GP3qODCYe1JA?e=xKASDV
+
+hvordan klargjøre den stasjonære PC-en til hosting av siden:
+https://computingforgeeks.com/how-to-install-lamp-stack-on-fedora/
+

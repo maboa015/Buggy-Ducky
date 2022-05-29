@@ -6,6 +6,8 @@ https://udeoslokommuneno-my.sharepoint.com/:u:/g/personal/maboa015_osloskolen_no
 PHP og SQL dokumentasjon:
 https://udeoslokommuneno-my.sharepoint.com/:u:/g/personal/maboa015_osloskolen_no/EQPcrpAn04hOtg5TtaNebksBLth_K1hHK6GP3qODCYe1JA?e=xKASDV
 
-hvordan klargjøre den stasjonære PC-en til hosting av siden:
-https://computingforgeeks.com/how-to-install-lamp-stack-on-fedora/
+hvordan klargjøre den stasjonære PC-en til hosting av siden (LAMP):
+https://udeoslokommuneno-my.sharepoint.com/:w:/g/personal/maboa015_osloskolen_no/EUJg5_KjNJdGp5dDJURUA9gBMGpHmKtIMJDzpP9yv2WYFg?e=Cxqu3I
 
+tutorial for LAMP original:
+https://computingforgeeks.com/how-to-install-lamp-stack-on-fedora/
